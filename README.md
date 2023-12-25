@@ -1,17 +1,17 @@
-# rbxts-transform-env
+# @rbxts-transformer/env
 
 Transformer for Roblox TypeScript compiler that allows getting values of process.env as string literals
 
 # Installation
 
-`npm i rbxts-transform-env`, then in your tsconfig.json:
+`npm i @rbxts-transformer/env`, then in your tsconfig.json:
 
 ```json
     "compilerOptions": {
         ...
         "plugins": [
             {
-                "transform": "rbxts-transform-env"
+                "transform": "@rbxts-transformer/env"
             }
         ],
     }
@@ -65,10 +65,10 @@ This also applies to `$env.boolean`. Currently `$env.string` and `$env.number` d
 
 Below is a matrix of versions to roblox-ts versions. This should be approximately correct for the older versions.
 
-| roblox-ts            | rbxts-transform-env | typescript |
-| -------------------- | ------------------- | ---------- |
-| `2.2.0`              | `2.2.0` (`latest`)  | `~5.2.2`   |
-| ` 2.1.x`             | `2.1.0` (`beta`)    | `~4.9.5`   |
-| ` 2.0.x`             | `2.0.0`             | `~4.8.2`   |
-| `≥ 1.3.0 && ≤ 1.3.3` | `1.1.0-ts4.5`       | `~4.5.5`   |
-| `= 1.2.9`            | `1.1.0-ts4.4`       | `~4.4`     |
+| roblox-ts            | @rbxts-transformer/env | typescript |
+| -------------------- | ---------------------- | ---------- |
+| `2.2.0`              | `2.2.0` (`latest`)     | `~5.2.2`   |
+| ` 2.1.x`             | `2.1.0` (`beta`)       | `~4.9.5`   |
+| ` 2.0.x`             | `2.0.0`                | `~4.8.2`   |
+| `≥ 1.3.0 && ≤ 1.3.3` | `1.1.0-ts4.5`          | `~4.5.5`   |
+| `= 1.2.9`            | `1.1.0-ts4.4`          | `~4.4`     |
